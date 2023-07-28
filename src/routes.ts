@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import { Router } from "express";
-import UserRouter from "./UserRouter";
+import UserRouter from "@modules/user/routes";
 
 const router = Router();
 
