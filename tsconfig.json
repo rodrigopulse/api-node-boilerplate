@@ -12,7 +12,8 @@
       "@controllers/*": ["./src/controllers/*"],
       "@models/*": ["./src/models/*"],
       "@routes/*": ["./src/routes/*"],
-      "@modules/*": ["./src/modules/*"]
+      "@modules/*": ["./src/modules/*"],
+      "@middleware/*": ["./src/middleware/*"]
     }
   },
   "include": ["src/**/*"],

@@ -1,10 +1,11 @@
 import { type RequestHandler, Router } from "express";
 
-import Register from "../controllers/register";
+import { register, login } from "../controllers/";
 
 const UserRouter = Router();
 
-// Public
-UserRouter.post("/public/user/register", Register as RequestHandler);
+UserRouter.post("/public/user/register", register as RequestHandler);
+
+UserRouter.post("/public/user/login", login as RequestHandler);
 
 export default UserRouter;

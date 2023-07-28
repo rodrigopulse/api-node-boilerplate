@@ -1,4 +1,5 @@
 import express from "express";
+import cookieParser from "cookie-parser";
 
 import Router from "./routes";
 import { connect } from "./db";
@@ -6,6 +7,7 @@ import { connect } from "./db";
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use(Router);
 

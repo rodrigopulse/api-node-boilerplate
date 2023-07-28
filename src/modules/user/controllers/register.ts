@@ -27,6 +27,3 @@ export const register = async (
     return res.status(400).json({ message: "Ocorreu um erro no cadastro" });
   }
 };
-
-const Register = register;
-export default Register;
