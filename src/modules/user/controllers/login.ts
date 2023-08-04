@@ -28,7 +28,7 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
           secure: true,
           maxAge: 3600000 * 2000,
         })
-        .json({ message: "Usuário conectado" });
+        .json({ message: "Usuário conectado", token });
     }
 
     return res.status(401).json({ message: "E-mail e/ou senha inválidos" });
