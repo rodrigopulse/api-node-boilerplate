@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import User, { IUser } from "../models/User";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export const login = async (req: Request, res: Response): Promise<Response> => {

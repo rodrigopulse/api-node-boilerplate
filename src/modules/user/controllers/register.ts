@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import User, { IUser } from "../models/User";
 
 export const register = async (
